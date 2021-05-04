@@ -33,9 +33,9 @@ jobs:
           
       # Step to install surge  
       - name: installing surge
-      - run: npm install --global surge
+        run: npm install --global surge
       
       # Deploy App to surge
       - name: Deploying project to Surge
-      - run: surge ./ mzeeshan_jsprojects.surge.sh --token ${{ secrets.SURGE_TOKEN}}
+        run: surge ./ mzeeshan_jsprojects.surge.sh --token ${{ secrets.SURGE_TOKEN}}
 
